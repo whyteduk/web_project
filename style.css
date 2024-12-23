@@ -1,0 +1,382 @@
+body {
+	font: 15px/1.5 Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+/* Global */
+
+.contact-in {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding:10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map {
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+
+.contact-form {
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+
+.contact-form h1{
+	margin-bottom:10px;
+}
+
+.contact-form-txt {
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border-radius: 50px;
+	outline:none;
+	margin-bottom: 20px;
+	padding:15px;
+}
+
+.contact-form-txtarea {
+	width: 100%;
+	height: 130px;
+	color: #000;
+	border-radius: 50px;
+	outline:none;
+	margin-bottom: 20px;
+	padding:15px;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* subcribe*/
+
+.eButton{
+	height: 38px;
+	background: #ff0000;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.eButton2{
+	height: 38px;
+	background: #ff0000;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #000000;
+}
+
+Section a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.dark a {
+	color: lightblue;
+}
+
+/* Header */
+
+header {
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #ff0000 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+.current, nav ul li:hover {
+	background: crimson;
+}
+
+.sub-menu-1 {
+	position: absolute;
+	display: block;
+	z-index: 1;
+}
+
+.sub-menu-1 ul {
+	display: none;
+	position: absolute;
+	background-color: #35424a;
+	bottom: -75px;
+	border-radius: 0px 0px 4px 4px;
+	padding: 2px 0px;
+	z-index: 1;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+.sub-menu-1 ul li {
+	width: 100px;
+	border-radius: 4px;
+}
+
+header #brand {
+	float: left;
+}
+
+header #brand h1{
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight {
+	color: #00FF00;
+	font-weight: bold;
+}
+
+header .current a {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+
+/* showcase */
+
+#showcase {
+	min-height: 400px;
+	background: url('pic1.png') no-repeat 0; /* insert image for background */
+	background-size: cover;
+	text-align: center;
+	color: #000000;
+	width: 100vw;
+}
+
+#showcase h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+#showcase h1 span {
+	color: crimson;
+}
+
+#showcase p {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+/*newsletter*/
+
+#newsletter{
+	padding: 15px;
+	color: #ffffff;
+	background: #35424a;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 38px;
+	width: 250px;
+}
+
+/*boxes*/
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width :30%;
+	padding: 10px;
+}
+
+/*For Image*/
+
+#boxes .box img{
+	width: 5px; /* maybe 5px? lol */
+}
+
+/*Sidebar*/
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%;
+	padding: 5px;
+}
+
+/*Main-col*/
+article#main-col{
+	float: left;
+	width: 65%;
+}
+
+/*Services*/
+ul#services li{
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+}
+
+ul#services li a {
+	color: teal;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #ff0000;
+	text-align: center;
+}
+
+/*Media Queries*/
+@media(max-width: 768px){
+	header #brand,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+header{
+	padding-bottom: 20px;
+}
+
+#showcase h1{
+	margin-top: 40px;
+}
+
+#newsletter button{
+	display: block;
+	width: 100%;
+}
+
+#newsletter button, .quote button{
+	display: block;
+	width: 90%;
+}
+
+#newsletter form input[type="email"], .quote input, .quote textarea{
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+
+/*Signup*/
+.sign-up-form {
+	width: 300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+
+/* Diet */
+ul#diet li{
+    padding: 5px 0px 140px 20px;
+    width: 800px;
+    height:200px;
+    border:#cccccc solid 1px;
+    background: #e6e6e6;
+    margin-bottom:30px;
+    font-size: 17px;
+}
+
+ul#diet li img{
+            margin-left:10px;
+            position: relative;
+            bottom: 10px;
+            left:10px;
+            object-fit:cover;
+            }
+
+/* bulk */
+ul#bulk div{
+    padding: 5px 0px 140px 20px;
+    width: 850px;
+    height:250px;
+    border:#cccccc solid 1px;
+    background: #e6e6e6;
+    margin-bottom:30px;
+    font-size: 17px;
+}
+
+ul#bulk div img{
+            margin-left: 10px;
+            position: relative;
+            bottom: 30px;
+            right: 10px;
+            object-fit: cover;
+            }
+
+}

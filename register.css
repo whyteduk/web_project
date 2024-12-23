@@ -1,0 +1,193 @@
+body {
+	font: 15px/1.5 Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	background-position: center;
+}
+
+/* Global */
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Subcribe */
+
+.eButton{
+	height: 38px;
+	background: #ff0000;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Header */
+
+header {
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #ff0000 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+.current, nav ul li:hover {
+	background: crimson;
+}
+
+.sub-menu-1 {
+	position: absolute;
+	display: block;
+	z-index: 1;
+}
+
+.sub-menu-1 ul {
+	display: none;
+	position: absolute;
+	background-color: #35424a;
+	bottom: -75px;
+	border-radius: 0px 0px 4px 4px;
+	padding: 2px 0px;
+	z-index: 1;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+.sub-menu-1 ul li {
+	width: 100px;
+	border-radius: 4px;
+}
+
+header #brand {
+	float: left;
+}
+
+header #brand h1{
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight {
+	color: #00FF00;
+	font-weight: bold;
+}
+
+header .current a {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #ff0000;
+	text-align: center;
+}
+
+/* Registration */
+
+.sign-up-form {
+	width: 300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #ffffff;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+
+.sign-up-form h1 {
+	color: crimson;
+	margin-bottom: 30px;
+}
+
+.input-box {
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+button {
+	color: #ffffff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.signup-btn {
+	background-color: crimson;
+}
+
+.google-btn {
+	background-color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	margin-top: 20px;
+	width: 80%;
+}
+
+.or {
+	background: #ffffff;
+	width: 30px;
+	margin: -19px auto 10px;
+}
+
+img {
+	width: 70px;
+}
+
+}
